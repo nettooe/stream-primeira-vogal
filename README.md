@@ -22,7 +22,8 @@ Ao final desta execução, ser apresentado o seguinte resultado:
 ```
 input= "aAbBABacafe" == e
 ```
-Para experimentar com outros streams de caracteres, utilize:
+### Executando mais testes (usos)
+Após ter efetuado o passo a passo do tópico anterior... para experimentar com outros streams de caracteres, utilize:
 ```
 $ java -jar Main.jar <MinhaSequênciaDeCaracteres>
 ```
