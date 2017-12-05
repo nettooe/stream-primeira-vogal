@@ -10,18 +10,18 @@ public class Main {
 
 			for (String input : args) {
 				try {
-					System.out.println("input= \"" + input + "\" == ");
+					System.out.print("input= \"" + input + "\" == ");
 					char retorno = firstChar(input);
-					System.out.print(retorno);
+					System.out.println(retorno);
 				} catch (Exception e) {
-					System.out.print(e.getMessage());
+					System.out.println(e.getMessage());
 				}
 			}
 
 		} else {
 
 			String input = "aAbBABacafe";
-			System.out.println("input= \"" + input + "\"");
+			System.out.print("input= \"" + input + "\"");
 			try {
 				char retorno = firstChar(input);
 				System.out.println(retorno);
