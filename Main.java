@@ -1,5 +1,4 @@
 
-
 import java.util.HashSet;
 import java.util.Set;
 
@@ -7,13 +6,28 @@ public class Main {
 
 	public static void main(String[] args) {
 
-		String input = "aAbBABacafe";
+		if (args != null && args.length > 0) {
 
-		try {
-			char retorno = firstChar(input);
-			System.out.println(retorno);
-		} catch (Exception e) {
-			System.out.println(e.getMessage());
+			for (String input : args) {
+				try {
+					System.out.println("input= \"" + input + "\" == ");
+					char retorno = firstChar(input);
+					System.out.print(retorno);
+				} catch (Exception e) {
+					System.out.print(e.getMessage());
+				}
+			}
+
+		} else {
+
+			String input = "aAbBABacafe";
+			System.out.println("input= \"" + input + "\"");
+			try {
+				char retorno = firstChar(input);
+				System.out.println(retorno);
+			} catch (Exception e) {
+				System.out.println(e.getMessage());
+			}
 		}
 
 	}
